@@ -1,0 +1,12 @@
+
+
+
+
+
+
+                        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+                        String q = reader.readLine();
+                        int w = Integer.parseInt(sAge);
+
+                        import static java.lang.Math.*;
