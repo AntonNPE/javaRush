@@ -51,6 +51,29 @@ public class Solution
     public static void sort(String[] array)
     {
         //напишите тут ваш код
+        String c;
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0; j < array.length; j++)
+            {
+                if (isNumber(array[i])&&isNumber(array[j])){
+                    Integer x = Integer.parseInt(array[i]);
+                    Integer y = Integer.parseInt(array[j]);
+                    if (x>y){
+                        array[i] = y.toString();
+                        array[j] = x.toString();
+                    }
+                }
+                if (!isNumber(array[i])&&!isNumber(array[j])){
+                    if (isGreaterThan(array[j],array[i])){
+                        c = array[i];
+                        array[i] = array [j];
+                        array[j] = c;
+                    }
+                }
+            }
+            
+        }
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
